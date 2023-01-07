@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+:root {
+    --color:#34B0BE;
+    --color:#D1CECA;
+    --color:#242635;
+    --color:#FFFFFF;
+    --color: #090b1e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+        
+}
+
+imag {
+    display: block;
+    width: 100%;
+} 
+
+body {
+    padding: 2rem;
+	background-color: #090b1e;
+    font-family: 'Montserrat', sans-serif;
+   
+}
+
+.cards {
+   border-radius: 2rem;
+   overflow: hidden;
+   padding: 2rem;
+   justify-content: center;
+  
+}
+
+.card__photo {
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+    background-color: #242635;
+    flex-direction: column;
+}
+
+.card__laboral p {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px;
+    gap: 1rem;
+
+}
+.card__paragraph2 span {
+    color:#34B0BE;
+}
+.card__subtitle {
+    color: #FFFFFF;
+}
+.card__title {
+    color:#34B0BE;
+    letter-spacing: 1px;
+}
+
+.card__paragraph {
+    color: #FFFFFF;
+}
+
+.card__paragraph2 {
+    color:#FFFFFF;
+}
+
+
+.card__logos {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; 
+    
+}
+
+.card__logo__item {
+    background-color: #D1CECA;
+    font-weight: 700;
+    padding: 0.5rem;
+}
+    
+ .centerPerfect {
+    border-radius: 100%;
+    display: flex;
+ }
+
+.card__social {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; 
+} 
+.card__social__item {
+    background-color: #D1CECA;
+    font-weight: 700;
+    padding: 0.5rem;
+}
+
+.centerPerfect2 {
+    border-radius: 0%;
+    display: flex;
+ }
+
+
+.card__title2  {
+    text-align: center;
+    color: #34B0BE;
+
+}
+
+.card__paragraph3 {
+    color:#FFFFFF;
+    align-items: center;
+    gap: 1rem;
+}  
+
+.card__title3 {
+    text-align: center;
+    padding: 3%;
+    color: #34B0BE;
+}
+
+.card__title3 p {
+    color:#FFFFFF;  
+}
+.card__paragraph4 span {
+    color:red;
+} 
+
+
+
+.img__mobile {
+    display: block;
+}
+
+.img__desktop {
+    display: none;
+}
+
+   /* mis habilidades */
+
+.card__word {
+    text-align: center;
+    padding: 3%;
+}
+
+.cajon {
+    width: 100%;
+    padding: 30px 30px 50px;
+    background: linear-gradient(450deg,red);
+    border: 2px solid rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.cajon *{
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+
+h2 {
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.skills:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.detalles {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.menu {
+    position: relative;
+    border: 1px solid #34B0BE ;
+    border-radius: 20px;
+}
+
+.menu div {
+    position: relative;
+    width: 0;
+    height: 8px;
+    border-radius: 10px;
+    background-color: #34B0BE;
+}
+
+    /* animacion  */
+
+#Marketing-menu {
+    animation: Marketing-barra 2s forwards;
+}
+
+@keyframes Marketing-barra {
+    100% {
+        width: 95%;
+    }
+}
+
+#UI-Desing-menu {
+    animation: UI-Desing-barra 2s forwards;
+
+}
+
+@keyframes UI-Desing-barra {
+    100% {
+        width: 95%;
+    }
+}
+
+#UX-Research-menu {
+    animation: UX-Research-barra 2s forwards;
+
+}
+
+@keyframes UX-Research-barra {
+    100% {
+        width: 80%;
+    }
+}
+
+
+   /* mi portafolio */
+
+
+.card__title4 {
+    text-align: center;
+    padding: 3%;
+   }
+
+.card__title5 {
+    text-align: center;
+    padding: 10%;
+}
+
+.card__phonee {
+    text-align: center;
+    padding: 10%;
+}
+
+.card__email {
+    text-align: center;
+    padding: 10%;
+}
