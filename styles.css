@@ -5,14 +5,16 @@
     --color:#D1CECA;
     --color:#242635;
     --color:#FFFFFF;
+    --color-primary: rgb(220, 53, 69);
     --color: #090b1e;
+    --color-primary-shadow: rgb(220, 53, 69, 0.15);
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-        
+    font-family: 'Montserrat', sans-serif;  
 }
 
 imag {
@@ -22,67 +24,107 @@ imag {
 
 body {
     padding: 2rem;
-	background-color: #090b1e;
-    font-family: 'Montserrat', sans-serif;
-   
+     background-color: #090b1e; 
+     font-family: 'Montserrat', sans-serif; 
+    display: flex; 
+}
+ 
+img .img__mobile{
+    display: block; 
 }
 
+/* img .img__desktop {
+    display: none; 
+} */
+
+.body {
+   margin-top: 2rem;
+} 
+
 .cards {
-   border-radius: 2rem;
+   /* max-width: 1200px; */
+   background-color: red;
+   /* margin: 0 auto; */
+   /* border-radius: 2rem; */
    overflow: hidden;
    padding: 2rem;
    justify-content: center;
-  
+   flex-direction: column;
+   gap: 1rem;
 }
+
+.card {
+    min-height: 100vh;
+    background-image: url(./Logos-\ Imágenes/.img__desktop);
+}
+
+/* .card__header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+} */
+
+/* .body__headers,
+.card__folios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px 1fr));
+    gap: 1rem;
+} */
+
+    /* imag */
 
 .card__photo {
-    border-radius: 100%;
-    display: flex;
+    display: grid;
     justify-content: center;
-    align-items: center;
-    padding: 4%;
-    background-color: #242635;
-    flex-direction: column;
+    background-color:#242635; 
+    border-radius: 90vh;
+    width: 325px;
 }
 
+    /* laboral */
+
 .card__laboral p {
+    color: #FFFFFF;
     display: flex;
     justify-content: space-around;
     width: 100%;
     padding: 10px;
-    gap: 1rem;
+}
 
+.card__laboral h1 {
+    color: #34B0BE;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;  
 }
-.card__paragraph2 span {
-    color:#34B0BE;
+
+.card__subtitles h3 {
+    color: #FFFFFF;
+    text-align: center;
 }
-.card__subtitle {
+
+.card__laboral h5 {
+    text-align: center;
     color: #FFFFFF;
 }
-.card__title {
-    color:#34B0BE;
-    letter-spacing: 1px;
+
+.card__laboral span {
+    color: #34B0BE;
 }
 
-.card__paragraph {
-    color: #FFFFFF;
-}
 
-.card__paragraph2 {
-    color:#FFFFFF;
-}
+    /* logos */
 
 
 .card__logos {
     display: flex;
     justify-content: center;
-    gap: 2rem; 
-    
+    gap: 2rem;
 }
 
 .card__logo__item {
     background-color: #D1CECA;
-    font-weight: 700;
     padding: 0.5rem;
 }
     
@@ -91,56 +133,139 @@ body {
     display: flex;
  }
 
+
+    /* social */
+
+    
+
 .card__social {
     display: flex;
+    border-radius: 3vh;
     justify-content: center;
-    gap: 2rem; 
-} 
-.card__social__item {
+    gap: 2rem;
+    background-color: #242635;
+}
+
+.card__social__item1 {
+    text-align: center;
     background-color: #D1CECA;
-    font-weight: 700;
+    min-width: 20vh;
+    border-radius: 3vh; 
     padding: 0.5rem;
 }
 
-.centerPerfect2 {
-    border-radius: 0%;
-    display: flex;
- }
-
-
-.card__title2  {
+.card__social__item2 {
     text-align: center;
-    color: #34B0BE;
-
+    border-radius: 3vh;
+    min-width: 20vh;
+    background-color: #D1CECA;
+    padding: 0.5rem;
 }
 
-.card__paragraph3 {
-    color:#FFFFFF;
-    align-items: center;
-    gap: 1rem;
-}  
+.card__social__item3 {
+    text-align: center;
+    border-radius: 3vh;
+    min-width: 20vh;
+    background-color: #D1CECA;
+    padding: 0.5rem;
+}
 
-.card__title3 {
+
+    /* acerca de mi */
+
+.card__title2 h2 {
+    font-size: 1.6rem;
+    text-align: center;
+    color: #34B0BE;
+}
+
+.card__title2 p {
+    color: #D1CECA;
+    justify-content: center;
+}
+
+
+    /* servicios */
+
+.card__title3 h2 {
+    font-size: 1.6rem;
     text-align: center;
     padding: 3%;
     color: #34B0BE;
 }
-
-.card__title3 p {
-    color:#FFFFFF;  
-}
-.card__paragraph4 span {
-    color:red;
-} 
-
-
-
-.img__mobile {
-    display: block;
+.card__iconos {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
 }
 
-.img__desktop {
-    display: none;
+.card__icono-pen{
+    background-color: #FFFFFF;
+    justify-content: center;
+    border-radius: 0.3rem;
+    text-align: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-weight: 200;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card__icono-speak {
+    background-color: #FFFFFF;
+    justify-content: center;
+    border-radius: 0.3rem;
+    text-align: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-weight: 200;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card__icono-sear {
+    background-color: #FFFFFF;
+    justify-content: center;
+    border-radius: 0.3rem;
+    text-align: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-weight: 200;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card__icono-pen span {
+    color: #090b1e;
+    font-size: 20px; 
+}
+
+.card__icono-pen {
+    color:#d3d4d9;
+}
+
+.card__icono-speak span {
+    color: #090b1e;
+    font-size: 20px; 
+}
+
+.card__icono-speak {
+    color:#d3d4d9;
+}
+
+.card__icono-sear span {
+    color: #090b1e;
+    font-size: 20px; 
+}
+
+.card__icono-sear {
+    color:#d3d4d9;
 }
 
    /* mis habilidades */
@@ -148,6 +273,11 @@ body {
 .card__word {
     text-align: center;
     padding: 3%;
+}
+
+.cajon__tittle h2 {
+    font-size: 1.6rem;
+    color: #34B0BE; 
 }
 
 .cajon {
@@ -184,12 +314,18 @@ h2 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+.detalles span {
+    color: #34B0BE;  
 }
 
 .menu {
     position: relative;
     border: 1px solid #34B0BE ;
     border-radius: 20px;
+    background-color: #FFFFFF;
 }
 
 .menu div {
@@ -243,17 +379,65 @@ h2 {
     padding: 3%;
    }
 
-.card__title5 {
+.card__title4 h2 {
+    font-size: 1.6rem;
+    color: #34B0BE   
+}
+
+.card__folios {
+    display: flex;
+    gap: 2rem;
+}
+
+    /* contacto */
+
+
+.card__title5 h2 {
+    font-size: 1.6rem;
     text-align: center;
-    padding: 10%;
+    padding: 2%;
+    color: #34B0BE;
 }
 
 .card__phonee {
+    background-color: #FFFFFF;
+    justify-content: center;
+    border-radius: 1rem;
     text-align: center;
-    padding: 10%;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-weight: 200;
+    padding: 2rem;
+}
+
+.card__phonee-img {
+font-size: 3rem;
+font-weight: bold;
+}
+
+.card__phonee p {
+   color: #090b1e; 
+}
+.card__phonee-number2 span {
+    color:#d3d4d9;
+
 }
 
 .card__email {
+    background-color: #FFFFFF;
+    justify-content: center;
+    border-radius: 1rem;
     text-align: center;
-    padding: 10%;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-weight: 200;
+    padding: 2rem;
 }
+
+.card__email p {
+    color: #090b1e; 
+}
+.card__email span {
+    color:#d3d4d9; 
+}
+
