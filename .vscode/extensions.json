@@ -1,5 +1,6 @@
 {
     "recommendations": [
-        "remimarsal.prettier-now"
+        "remimarsal.prettier-now",
+        "fnando.linter"
     ]
 }
